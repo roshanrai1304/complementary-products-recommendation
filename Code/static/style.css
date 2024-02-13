@@ -1,0 +1,223 @@
+
+
+
+/* #### Index Page ####  */
+
+/* Navigation Bar */
+
+.index{
+   font-family: 'Anton', sans-serif;
+   font-family: 'DM Serif Text', serif;
+   color: wheat;
+   margin: 0px;
+   padding: 0px;
+   background: url('/static/food_1.jpg');
+   background-repeat: no-repeat;
+   background-size: 100% 122%;
+   height: 600px;
+   /* font-family: 'Noto Serif', serif; */
+   /* font-family: 'Roboto Slab', serif; */
+}
+
+ 
+
+ .left{
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 20px;
+ }
+
+ .left img{
+    width: 80px;
+    filter: invert(100%);
+    position: relative;
+    left: 24px;
+    bottom: 8px;
+ }
+
+ .left div{
+    text-align: center;
+    font-size: 18px;
+    line-height: 2px;
+    position: relative;
+    left: 4px;
+    bottom: 1px;
+ }
+
+ .mid{
+    display: block;
+    width: 45%;
+    margin: 20px auto;
+ }
+
+ .right{
+    position: absolute;
+    right: 34px;
+    top: 30px;
+    display: inline-block;
+ }
+
+ .navbar{
+    display: inline-block;
+ }
+
+ .navbar li{
+    display: inline-block;
+    font-size: 20px;
+ }
+
+ .navbar li a{
+   color: white;
+   text-decoration: none;
+   padding: 38px 23px;
+ }
+
+ .navbar li a:hover{
+    text-decoration: underline;
+    color: rgb(118, 255, 6);
+ }
+
+ .btn {
+    font-family: 'Noto Serif', serif;
+    font-family: 'Roboto Slab', serif;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+ }
+
+ .btn:hover{
+    background-color: rgb(118, 255, 6);
+ }
+
+
+ /* #### Recommend #### */
+
+ #recommend{
+   display: flex;
+   flex-direction: column;
+   padding: 3px 200px;
+   height: 330px;
+   justify-content: center;
+   align-items: center;
+}
+
+#recommend::before{
+   content: "";
+    background: url('/static/food_2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 740px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+
+.container h1{
+   text-align: center;
+   position: relative;
+   top: 75px;
+   left: 10px;
+   font-size: 50px;
+   color: rgb(0, 0, 0);
+}
+
+.form-control{
+   /* display: flex; */
+   text-align: center;
+   position: relative;
+   top: 76px;
+   left : 120px;
+   border-radius: 19px;
+   /* backdrop-filter: blur(4px) saturate(180%); */
+   height: 40px;
+   width: 600px;
+   font-size: 20px;
+   
+}
+
+.submit-btn{
+   /* display: flex; */
+   font-family: 'Noto Serif', serif;
+   font-family: 'Roboto Slab', serif;
+   text-align: center;
+   position: relative;
+   top: 102px;
+   left: 362px;
+   margin: 0px 9px;
+   background-color: black;
+   color: white;
+   padding: 4px 19px;
+   border: 2px solid gray;
+   border-radius: 10px;
+   font-size: 22px;
+   cursor: pointer;
+}
+
+.submit-btn:hover{
+   text-decoration: underline;
+   color: rgb(118, 255, 6);
+}
+
+
+/* Recommend part */
+
+.products{
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   border: 2px solid black;
+   background-color: white;
+   top: 350px;
+   font-size: 15px;
+   
+
+}
+
+/* #poonam{
+   size: 400px;
+} */
+
+.comple-body{
+   display: block;
+   position: relative;
+}
+
+.comple-body text{
+   top:200px;
+   left: 400px;
+   text-align: center;
+   font-size: 40px;
+}
+
+.space{
+   position: absolute;
+   bottom: 375px;
+   left: 690px;
+
+}
+
+
+
+/* Search bar name */
+
+.pro_name{
+   display: block;
+   position: relative;
+   font-size: 20px;
+}
+
+.name {
+   position: absolute;
+   bottom: -48px;
+   left: 241px;
+   font-size: 21px;
+}

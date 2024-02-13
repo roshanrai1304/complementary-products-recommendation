@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    
+  </head>
+  <link rel="stylesheet" href="/static/style.css" />
+
+  
+
+  <body id="recommend" class="recommend">
+    <div class="container">
+      <h1 >Choose from list of available products</h1>
+      <form action="recommend_products" method="post">
+        <input name="user_input" type="text" class="form-control" id='prod'/><br />
+        <input type="submit" class="submit-btn" />
+      </form>
+
+      <div class='pro_name'>
+        {% if user_input %}  
+              <h3 class=name>{{user_input}}</h3>
+        {% endif %}
+      </div>
+
+      <div class='space'>
+
+        
+        {% if comple_prod %} {% for i in comple_prod %}
+        
+        <div class="products", id='poonam'>
+            <div class="comple-body">
+              <h4 class="text">{{ i }}</h4>
+          </div>
+        </div>
+
+        {% endfor %} {% endif %}
+
+      </div>
+    </div>
+  </body>
+</html>
